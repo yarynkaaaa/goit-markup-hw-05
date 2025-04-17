@@ -629,10 +629,30 @@ border-radius: 2px;
         color: #8e8f99;
 }
 .privacy{
-    line-height: 1.33;
-        text-decoration: underline;
-        text-decoration-skip-ink: none;
+    text-decoration: underline;
         color: #4d5ae5;
+}
+.chek-imag{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Стиль для спану у checked стані */
+.chek-form-input:checked+.check-input .chek-imag {
+    background-color: #404bbf;
+    border: none;
+}
+
+/* Стиль для SVG іконки у checked стані */
+.chek-form-input:checked+.check-input .chek-imag .sq-sub {
+    fill: #F4F4FD;
 }
 .modal-send{
     display: block;
@@ -651,4 +671,51 @@ border-radius: 2px;
         border: none;
         background-color: #4D5AE5;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send{
+    margin-left: 80px;
+}
+.subscr-form{
+    display: flex;
+    gap: 24px;
+}
+.sssbs-inpt{
+    background-color: transparent;
+    padding-left: 16px;
+    border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 2;
+            letter-spacing: 0.04em;
+            color: #fff;
+}
+.sssbs-inpt::placeholder{
+    color: #fff;
+}
+.sbscr-btn{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        background-color: #4d5ae5;
+        border: none;
+        border-radius: 4px;
+            padding: 8px 24px;
+            width: 165px;
+            height: 40px;
+            font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+
+}
+.plane-imag{
+    fill: #fff;
 }
