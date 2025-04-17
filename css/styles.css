@@ -649,8 +649,6 @@ border-radius: 2px;
     background-color: #404bbf;
     border: none;
 }
-
-/* Стиль для SVG іконки у checked стані */
 .chek-form-input:checked+.check-input .chek-imag .sq-sub {
     fill: #F4F4FD;
 }
@@ -705,7 +703,7 @@ border-radius: 2px;
         border: none;
         border-radius: 4px;
             padding: 8px 24px;
-            width: 165px;
+            min-width: 165px;
             height: 40px;
             font-weight: 500;
                 font-size: 16px;
@@ -717,5 +715,6 @@ border-radius: 2px;
 
 }
 .plane-imag{
+    margin-left: 16px;
     fill: #fff;
 }
